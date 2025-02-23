@@ -1,0 +1,94 @@
+/* Container for the popular products section */
+.container {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Heading style */
+.heading {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* List of products */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Style for individual product item */
+.book-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect to lift the card */
+.book-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styles for product */
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* Product details (title, description, rating) */
+.book-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.book-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.book-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.book-rating {
+  font-size: 1.2rem;
+  color: #28a745; /* Green color for rating */
+  font-weight: bold;
+}
+
+/* Button style */
+.book-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.book-button:focus {
+  outline: none;
+}

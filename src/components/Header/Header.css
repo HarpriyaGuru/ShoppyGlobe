@@ -1,0 +1,126 @@
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #2d2d2d; /* Dark background for the header */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.header:hover {
+  background-color: #444; /* Lighter background color when hovered */
+}
+
+/* Logo styles */
+.logo-text {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.logo-text:hover {
+  color: #f39c12; /* Gold color when logo is hovered */
+}
+
+/* Navigation styles */
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #f39c12; /* Gold color on hover */
+}
+
+/* Cart section styles */
+.cart {
+  position: relative;
+  display: flex;
+  align-items: center; /* Align items vertically in the cart section */
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.cart-link:hover {
+  transform: scale(1.1); /* Slightly increase the cart icon size on hover */
+}
+
+/* Cart icon size adjustment */
+.cart-link svg {
+  width: 30px; /* Adjust the cart icon size */
+  height: 30px; /* Adjust the cart icon size */
+}
+
+/* Cart item count badge styles */
+.cart-item-count {
+  background-color: #f39c12; /* Gold background for item count */
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  right: -23px;
+  transform: scale(0);
+  animation: cartBadgeAnim 0.5s forwards; /* Animation when the count updates */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Cart badge animation */
+@keyframes cartBadgeAnim {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Cart badge animation when items are added */
+.cart-item-count.animate {
+  transform: scale(1);
+  animation: cartBadgeAnim 0.5s forwards;
+}
+
+/* Adding some padding and margin for the cart icon */
+.cart-text {
+  margin-left: 8px;
+}
+
+/* Hover effects for Cart icon and navigation */
+.cart-link:hover .cart-item-count {
+  background-color: #e67e22; /* Slightly darker gold on hover */
+}
+
+/* Adding space between the cart items */
+.cart-text {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5px;
+}

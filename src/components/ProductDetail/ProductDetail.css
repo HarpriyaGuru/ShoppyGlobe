@@ -1,0 +1,183 @@
+/* General container styling */
+.product-detail-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    flex-direction: column;
+  }
+  
+  .product-detail {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+  }
+  
+  .product-image-container {
+    flex: 1;
+    text-align: center;
+    padding-right: 30px;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 12px;
+  }
+  
+  .product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .product-price {
+    font-size: 24px;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .product-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .product-brand,
+  .product-warranty,
+  .product-shipping,
+  .product-availability {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .product-details {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .product-details h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .product-details p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  /* Button container */
+.product-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between the buttons */
+  }
+  
+  /* Common button style */
+  .cta-button,
+  .add-to-cart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%; /* Make the buttons take up the full width of the container */
+    max-width: 320px; /* Optional: Set a maximum width to avoid buttons becoming too wide on large screens */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text in the button */
+  }
+  
+  /* Hover effects */
+  .cta-button:hover,
+  .add-to-cart:hover {
+    transform: translateY(-4px); /* Make the button "pop" up when hovered */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Specific styling for each button */
+  .cta-button {
+    background-color: #007bff;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-to-cart {
+    background-color: #28a745;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #218838;
+  }
+  
+  /* Focus styles for accessibility */
+  .cta-button:focus,
+  .add-to-cart:focus {
+    outline: 3px solid #ffa500;
+    outline-offset: 3px;
+  }
+  
+  
+  /* Customer Reviews Section */
+  .product-reviews {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .review {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .review-rating {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .review-comment {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .review-author {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .review-date {
+    font-size: 12px;
+    color: #888;
+  }
+  
