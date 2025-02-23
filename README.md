@@ -25,7 +25,7 @@ ShoppyGlobe is a modern e-commerce application built with React, Redux, and Reac
 To run this project locally, follow the steps below:
 
 1. Clone the repository:
-   git clone https://github.com/yourusername/shoppyglobe.git
+   git clone https://github.com/HarpriyaGuru/ShoppyGlobe.git
 
 2. Navigate to the project directory:
    cd shoppyglobe
