@@ -55,8 +55,8 @@ const App = () => {
                 src="https://img.freepik.com/free-photo/female-model-with-flowers-her-face_114579-6264.jpg?semt=ais_hybrid" 
                 alt="Beauty" 
               />
-              <Link to="category/beauty">
-              Beauty
+                <Link to={`/category/beauty`}>
+                Beauty
               </Link>
             </div>
             <div className="category-item">
@@ -64,25 +64,25 @@ const App = () => {
                 src="https://img.freepik.com/free-photo/collection-small-perfume-bottles_53876-18283.jpg?semt=ais_hybrid" 
                 alt="fragrances" 
               />
-              <Link to="category/fragrances">
+              <Link to={`/category/fragrances`}>
               fragrances
               </Link>
-             
             </div>
             <div className="category-item">
               <img 
                 src="https://img.freepik.com/free-photo/picture-frame-with-abstract-art-by-pink-velvet-armchair_53876-128125.jpg?semt=ais_hybrid" 
                 alt="Furniture" 
               />
-               <Link to="category/furniture">Furniture</Link>
-              
+              <Link to={`/category/furniture`}>
+               Furniture</Link> 
             </div>
             <div className="category-item">
               <img 
                 src="https://img.freepik.com/premium-photo/miniature-shopping-cart_69593-8333.jpg?semt=ais_hybrid" 
                 alt="Groceries" 
               />
-              <Link to="category/groceries"> Groceries</Link>
+                <Link to={`/category/groceries`}>
+               Groceries</Link>
             </div>
           </div>
         </section>

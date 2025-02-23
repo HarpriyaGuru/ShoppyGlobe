@@ -24,7 +24,9 @@ const CartItem = ({ item }) => {
       <div className="cart-item-details">
         <h3 className="cart-item-title">{item.title}</h3>
         <p className="cart-item-price">${item.price}</p>
-        <div className="cart-item-quantity">
+        </div>
+
+        <div className="cart-item-quantity"> 
           <button
             onClick={() => handleQuantityChange(item.quantity - 1)}
             disabled={item.quantity <= 1}
@@ -39,12 +41,13 @@ const CartItem = ({ item }) => {
           >
             +
           </button>
-        </div>
+          </div>
+
         <button onClick={handleRemove} className="remove-btn">
           Remove
         </button>
-      </div>
-    </div>
+    </div>      
+
   );
 };
 

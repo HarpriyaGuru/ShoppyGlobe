@@ -19,10 +19,6 @@ const appRouter = createBrowserRouter([
     element: <App />
   },
   {
-    path: "/c",
-    element: <CartItem />
-    },
-  {
     path: "/home",
     element: <App />
   },
