@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { removeItem, updateQuantity } from '../../utils/cartSlice'; // Import the actions
+import './CartItem.css'; // Import CSS for the CartItem component
 
 const CartItem = ({ item }) => {
   const dispatch = useDispatch();

@@ -4,6 +4,7 @@ import { removeItem, updateQuantity } from "../../utils/cartSlice";
 import "./Cart.css"; // Import CSS
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import CartItem from "./CartItem";
 
 const Cart = () => {
   const items = useSelector((state) => state.cart.items); // Access cart items from Redux store
@@ -36,31 +37,7 @@ const Cart = () => {
         ) : (
           <>
             {items.map((item) => (
-              <div key={item.id} className="cart-item">
-                <img src={item.images} alt={item.title} className="cart-item-image" />
-                <div className="cart-item-details">
-                  <h3>{item.title}</h3>
-                  <p>${item.price}</p>
-                </div>
-                <div className="quantity-controls">
-                  <button
-                    onClick={() => handleUpdateQuantity(item.id, item.quantity - 1)}
-                    disabled={item.quantity <= 1}
-                  >
-                    -
-                  </button>
-                  <span>{item.quantity}</span>
-                  <button onClick={() => handleUpdateQuantity(item.id, item.quantity + 1)}>
-                    +
-                  </button>
-                </div>
-                <button
-                  className="remove-btn"
-                  onClick={() => handleRemove(item.id)}
-                >
-                  Remove
-                </button>
-              </div>
+              <CartItem key={item.id} item={item} /> // Use CartItem component for each cart item
             ))}
             <div className="cart-summary">
               <div className="total-price">
